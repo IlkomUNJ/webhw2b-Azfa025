@@ -1,0 +1,172 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header */
+header {
+  background: #ff7f50;
+  color: #fff;
+  padding: 1rem 0;
+  display: flex;
+}
+
+header .container {
+  width: 90%;
+  max-width: 1200px;
+  margin-left: 0;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 20px;
+}
+
+header .navbar-logo {
+  height: 50px;
+  padding-left : 20px;
+  vertical-align: left;
+}
+
+header nav {
+  flex: left;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+
+}
+
+header nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Hero */
+.hero {
+  background: url("../images/aremArem.webp") no-repeat center center/cover;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.hero-text {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #ff7f50;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background: #e56e3f;
+}
+
+/* Produk */
+.produk {
+  padding: 3rem 0;
+  background: #fff;
+}
+
+.produk h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #444;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 2rem;
+}
+
+.produk-item {
+  background: #fdfdfd;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  text-align: center;
+  padding: 1rem;
+  transition: transform 0.2s;
+}
+
+.produk-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.produk-item img {
+  max-width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.produk-item h3 {
+  margin: 0.5rem 0;
+}
+
+
+footer {
+  background: #333333;
+  color: #dddddd;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+}
+
+footer a {
+  color: #ff7f50;
+  text-decoration: none;
+}

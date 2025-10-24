@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulan Jajan</title> <link rel="icon" type="image/webp" href="images/Logo 1.webp"/>
+    <link rel="stylesheet" href="/css/style-order.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/Logo 1.webp" alt="Logo Bulan Jajan" class="navbar-logo">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="/">Beranda</a></li>
+                    <li><a href="/produk">Produk</a></li>
+                    <li><a href="order">Order</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section>
+        <div class="formulir_pemesanan">
+            <h2>Formulir Pemesanan</h2>
+
+            <form action="#" method="post">
+                <label for="nama">Nama Lengkap:</label>
+                <input type="text" id="nama" name="nama" required>
+
+                <label for="alamat">Alamat Pengiriman:</label>
+                <textarea id="alamat" name="alamat" required></textarea>
+
+                <label for="produk">Pilih Produk:</label>
+                <select id="produk" name="produk" required>
+                    <option value="">--Pilih Produk--</option>
+                    <option value="arem-arem">Arem-arem - Rp 15.000 / 4 pcs</option>
+                    <option value="pizza">Pizza - Rp 15.000</option>
+                    <option value="gemblong">Gemblong - Rp 10.000 / 3 pcs</option>
+                </select>
+
+                <label for="jumlah">Jumlah Pesanan:</label>
+                <input type="number" id="jumlah" name="jumlah" min="1" required>
+
+                <button type="submit">Kirim Pesanan</button>
+            </form>
+        </div>
+    </section>
+
+
+
+</body>
+</html>

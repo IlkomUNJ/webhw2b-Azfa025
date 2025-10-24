@@ -1,0 +1,125 @@
+@import "tailwindcss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base Styles */
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #ff7f50;
+  color: #fff;
+  padding: 1rem 0;
+  display: flex;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+header .container {
+  margin-left: 0;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 20px;
+}
+
+header .navbar-logo {
+  height: 50px;
+  padding-left: 20px;
+}
+
+header nav {
+  flex: left;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.formulir_pemesanan {
+  background: #fff;
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.formulir_pemesanan h2 {
+  text-align: center;
+  color: #ff7f50;
+  margin-bottom: 24px;
+}
+
+.formulir_pemesanan label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #444;
+}
+
+.formulir_pemesanan input,
+.formulir_pemesanan textarea,
+.formulir_pemesanan select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 18px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #f6f6f6;
+  transition: border-color 0.2s;
+}
+
+.formulir_pemesanan input:focus,
+.formulir_pemesanan textarea:focus,
+.formulir_pemesanan select:focus {
+  border-color: #ff7f50;
+  outline: none;
+}
+
+.formulir_pemesanan button {
+  width: 100%;
+  background: #ff7f50;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.formulir_pemesanan button:hover {
+  background: #e56e3f;
+}
